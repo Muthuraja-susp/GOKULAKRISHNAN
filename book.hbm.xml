@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="org.bok.BOOK" table="BOOK_DETAILS">
+      <id name="id" type="int" column="BOOK_ID">
+         <generator class="increment"/>
+      </id>
+      <property name="title" column="BOOK_TITLE" type="string"/>
+      <property name="author" column="AUTHOR" type="string"/>
+      <property name="price" column="PRICE" type="double"/>
+	 <property name="isbnno" column="ISBNNO" type="int"/>
+   </class>
+</hibernate-mapping>
