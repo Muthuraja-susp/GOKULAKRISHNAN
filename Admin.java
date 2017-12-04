@@ -30,5 +30,5 @@ public class Admin {
 		session.getTransaction().commit();
 		
 	}
-}
+
 }
